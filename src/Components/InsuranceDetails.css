@@ -1,0 +1,155 @@
+/* src/components/InsuranceDetails.css */
+.insurance-details {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #212529;
+  background: linear-gradient(180deg, #fbfdfe 0%, #ffffff 100%);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #eef3f6;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.insurance-details h2 {
+  font-size: 22px;
+  margin: 0 0 14px 0;
+  font-weight: 700;
+  color: #073b4c;
+}
+
+.insurance-details ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.insurance-details .scheme-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.03);
+}
+
+.insurance-details .scheme-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.insurance-details .scheme-info strong {
+  font-size: 15px;
+  color: #0f5132;
+}
+
+.insurance-details .scheme-meta {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.insurance-details .actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-btn {
+  background: transparent;
+  border: none;
+  color: #0d6efd;
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.link-btn:hover {
+  background: rgba(13,110,253,0.06);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap:6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.badge svg{ width:14px; height:14px }
+.badge.active { background: linear-gradient(90deg,#1fa467,#198754); }
+.badge.inactive { background: #6c757d; }
+
+/* Overlay content tweaks */
+.insurance-details p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #495057;
+}
+
+/* Make sure long lists scroll inside the area (overlay will limit height) */
+.insurance-details .list-scroll {
+  max-height: 56vh;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+/* Controls */
+.schemes-controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin:8px 0 12px 0;
+}
+.schemes-search{
+  flex:1;
+  padding:10px 12px 10px 36px;
+  border-radius:10px;
+  border:1px solid #e3e7ea;
+  font-size:14px;
+  background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2396a2a9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'></circle><line x1='21' y1='21' x2='16.65' y2='16.65'></line></svg>") no-repeat 10px center;
+  background-size:14px 14px;
+}
+.filter-active{
+  font-size:13px;
+  color:#495057;
+}
+
+.region-chips{
+  display:flex;
+  gap:8px;
+  margin-bottom:10px;
+}
+.chip{
+  border:1px solid #e9ecef;
+  background:#fff;
+  padding:7px 12px;
+  border-radius:999px;
+  cursor:pointer;
+  font-size:13px;
+  color:#2b4250;
+}
+.chip.selected{ background:#0d6efd; color:#fff; border-color:transparent; box-shadow:0 4px 10px rgba(13,110,253,0.12) }
+
+.scheme-card{ transition:box-shadow .18s, transform .12s, border-color .12s; border-color:transparent }
+.scheme-card:hover{ box-shadow:0 12px 30px rgba(16,24,40,0.08); transform:translateY(-3px); border-color:rgba(13,110,253,0.06) }
+
+.scheme-main{ display:flex; align-items:center; justify-content:space-between; gap:12px; cursor:pointer }
+.expanded-content{ max-height:0; overflow:hidden; transition:max-height .25s ease, padding .18s ease; padding:0 12px }
+.scheme-card.expanded .expanded-content{ max-height:240px; padding:12px }
+.brief{ margin:6px 0; color:#495057 }
+
+.no-results{ padding:18px; color:#667681; text-align:center; font-size:14px }
+
+/* Small screens: slightly tighter spacing */
+@media (max-width: 480px) {
+  .insurance-details .scheme-card { padding: 10px; }
+  .insurance-details h2 { font-size: 18px; }
+}

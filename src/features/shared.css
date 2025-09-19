@@ -1,0 +1,41 @@
+/* src/features/shared.css */
+/* Shared styles for cards, import where needed */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #495057;
+}
+
+.btn {
+  margin-top: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn.primary {
+  background: #28a745;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #218838;
+}

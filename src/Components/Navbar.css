@@ -1,0 +1,32 @@
+.navbar{
+  background:#fff;
+  border-bottom:1px solid #e9ecef;
+  padding:12px 20px;
+  position:sticky;
+  top:0;
+  z-index:40;
+}
+.navbar-inner{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  justify-content:space-between;
+}
+.brand{font-weight:700}
+nav{display:flex;gap:14px}
+.nav-link{color:#333;text-decoration:none;padding:6px 8px;border-radius:6px}
+.nav-link.active{background:#e6f5ee;color:#1f8a44}
+.actions .btn-primary{background:#28a745;color:#fff;padding:8px 12px;border-radius:8px;border:none}
+
+/* Additional styles used by newer Navbar component */
+.grok-navbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid #e9ecef;background:#fff}
+.grok-navbar__inner{display:flex;align-items:center;gap:20px}
+.grok-navbar__brand{font-weight:700;font-size:18px}
+.grok-navbar__nav{display:flex;gap:12px}
+.grok-navbar .nav-link{color:#333;text-decoration:none;padding:6px 10px;border-radius:6px}
+.grok-navbar .nav-link.active{background:#e7f5ff;color:#0b5ed7}
+
+.grok-logo{width:28px;height:28px;display:inline-block;vertical-align:middle;margin-right:8px}
+.grok-navbar__brand .brand-text{vertical-align:middle;display:inline-block}

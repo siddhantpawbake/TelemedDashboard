@@ -1,0 +1,31 @@
+/* src/components/Sidebar.css */
+/* Import in Sidebar.jsx if separating styles */
+.sidebar {
+  width: 200px;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #e9ecef;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.sidebar li:hover {
+  background: #f1f3f5;
+}
+
+.sidebar li.active {
+  background: #d1f3e6;
+  color: #198754;
+}

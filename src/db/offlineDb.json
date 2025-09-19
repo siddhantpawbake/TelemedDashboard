@@ -1,0 +1,7 @@
+{
+  "overview": { "name": "Offline User", "lastSeen": "2025-09-19", "age": 30 },
+  "appointments": [ { "id": 1, "date": "2025-10-01", "doctor": "Dr. Lee" } ],
+  "medications": [ { "id": 1, "name": "Atorvastatin", "dose": "10mg" } ],
+  "insurance": { "provider": "HealthSecure", "policy": "HS-12345" },
+  "records": [ { "id": 1, "title": "Blood Test", "date": "2025-09-01" } ]
+}
